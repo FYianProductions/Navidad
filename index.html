@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha: No soy un robot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor del botón de inicio -->
+    <div id="start-experience">
+        <button id="start-button">Iniciar experiencia</button>
+    </div>
+
+    <!-- Contenedor principal oculto inicialmente -->
+    <div id="container" style="display: none;">
+        <h1 id="loading-text">Cargando...</h1>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="message-container" style="display: none;">
+            <div id="message">
+                <p>¡Gracias por ingresar! Completa el captcha para continuar.</p>
+            </div>
+        </div>
+        <div id="captcha-container" style="display: none;">
+            <label class="captcha-label">
+                <input type="checkbox" id="captcha-checkbox" />
+                <span>No soy un robot</span>
+            </label>
+        </div>
+    </div>
+
+    <!-- Animación de Papá Noel -->
+    <div class="santa-animation">
+        <img src="https://cdni.iconscout.com/illustration/premium/thumb/trineo-santa-con-renos-9995764-8104534.png?f=webp" alt="Papá Noel con renos" class="santa">
+    </div>
+
+    <!-- Audio con referencia a un archivo local -->
+    <audio id="audio-player" style="display: none;">
+        <source src="./mi-audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

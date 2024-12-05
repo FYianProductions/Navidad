@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://www.prensalibre.com/wp-content/uploads/2023/12/arbol-navidad-interior-decorado-muchos-adornos.jpg?quality=52') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Botón "Iniciar experiencia" */
+#start-experience {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#start-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#start-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+#start-button:active {
+    transform: scale(1);
+}
+
+/* Barra de progreso */
+#progress-container {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#progress-bar {
+    width: 0;
+    height: 15px;
+    background: repeating-linear-gradient(
+        45deg,
+        #ff4d4d,
+        #ff4d4d 10px,
+        #ffffff 10px,
+        #ffffff 20px
+    );
+    animation: progress-stripes 16.7s linear forwards;
+}
+
+/* Animación de Papá Noel */
+.santa-animation {
+    position: absolute;
+    top: 50%;
+    left: -300px;
+    width: 300px;
+    animation: santa-fly 10s linear infinite;
+}
+
+.santa {
+    width: 100%;
+}
+
+/* Animación de vuelo */
+@keyframes santa-fly {
+    0% { left: -300px; top: 10%; }
+    100% { left: 110%; top: 10%; }
+}
+
+/* Captcha */
+.captcha-label {
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.captcha-label span {
+    display: inline-block;
+    background: #f4f4f4;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.captcha-label:hover span {
+    background: #e74c3c;
+    color: #fff;
+    border-color: #e74c3c;
+    transform: scale(1.1);
+}
+
+/* Mensaje final */
+#message-container {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid #f39c12;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
